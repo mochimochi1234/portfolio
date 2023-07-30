@@ -4,9 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="kadai.css">
+    <script src="kadai.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="button">
+            <label for="button" class="menu-btn">
+                <span></span>
+            </label>
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="#zikosyokai" class="bb">
+                            <h2>自己紹介</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sakuhin" class="bb">
+                            <h2>作品紹介</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1>Portfolio</h1>
+    </header>
+    <section>
+        <h2 id="zikosyokai" class="zikosyokai">自己紹介</h2>
+        <div class="syokai">
+            <img src="img/icon.JPG" class="icon">
+            <div class="syokai_text">
+                <h3>剣持　和貴</h3>
+                <p>
+                    某大学に通っている2年生です。通称もっちーです。<br>
+                    学んだこと：HTML、CSS、JavaScript、MAYA、C言語、動画編集、openCVによる画像処理(C++)、Photoshop、Illustrator、
+                    Premiere Pro、Adobe animate、デッサン<br>
+                    まだまだ力不足ですが、私が過去に作った作品たちを紹介しようと思います。
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="sakuhin" class="sakuhin">
+        <h2 class="a">作品紹介</h2>
+        <div class="maya">
+            <div class="maya_main">
+                <h2>CG作品</h2>
+                <div class="video1">
+                    <video id="video" src="img/portfolioyou.mp4" preload="none" loop autoplay muted playsinline width="100%" height="auto"></video>
+                </div>
+                <p class="main_setumei">
+                    使用ソフト：MAYA、iMovie、Photoshop<br>
+                    制作時間：12時間<br>
+                    動画自体はあまり面白くないし、殺風景だし、魚も少し不自然な動きをしているが、水面の綺麗さにとても自信のある一作です。<br>
+                    水面はプレーンを波のように動かし、光の屈折率など設定して作りました。<br>
+                    アニメーションではボーンを入れてみたり、カーブを描いてそれに沿って動かすのにとても苦労しました。エラーがいっぱい出て大変でした。<br>
+                    ドームライトを使用して、空や水中を表現しました。<br>
+                    岩はキューブをスムーズして、スムーズしたものを2つ重ねて、ブーリアンから論理積を使用して作成した。
+                </p>
+            </div>
+            <div class="maya_sub">
+                <div class="sakuhin1 s">
+                    <img src="img/sakuhin1.jpg" class="saku">
+                    <p class="setumei">
+                        使用ソフト：MAYA<br>
+                        制作時間：90分<br>
+                        この作品は私が大学1年生の時に作ったものである。<br>
+                        ティーポットやカップなどを作りました。<br>
+                        主にカーブやリボルブの機能を使用している。
+                    </p>
+                </div>
+                <div class="sakuhin2 s">
+                    <img src="img/sakuhin2.png" class="saku">
+                    <p class="setumei">
+                        使用ソフト：MAYA、Photoshop<br>
+                        制作時間：60分<br>
+                        このお魚は上の動画で最初の方に出てきます。<br>
+                        アーリーという魚を作りました。<br>
+                        多少画質が悪いが、形は悪くない。
+                    </p>
+                </div>
+                <div class="sakuhin3 s">
+                    <img src="img/sakuhin3.png" class="saku">
+                    <p class="setumei">
+                        使用ソフト：MAYA、Photoshop<br>
+                        制作時間：60分<br>
+                        このお魚も上の動画で出てくるものです。<br>
+                        ファインスケールタイガーフィッシュという魚です。<br>
+                        全体的にうまくいっている気がします。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="movie">
+            <h2>アニメーション</h2>
+            <div class="video2">
+                <video class="video" src="img/tensticksanime.mp4" preload="none" loop autoplay muted playsinline width="100%" height="auto"></video>
+            </div>
+            <p class="anime_setumei">
+                使用ソフト：Adobe animate<br>
+                製作時間：12時間<br>
+                これは私が1年生の授業で動画製作をするときに作った作品です。<br>
+                これは誰もが見たことのあるだろう10本アニメです。<br>
+                友達10人集めて声を当てているため、音声は無しにしています。<br>
+                棒1本1本を動かしていくのがとても大変でした。<br>
+                音声がないのでどんな話か分かりづらいと思うので、簡単に説明します。<br>
+                これはケーキを食べた犯人を探すお話です。
+            </p>
+        </div>
+        <div class="illust">
+            <h2>イラスト（レンダリング、デッサン）</h2>
+            <div id="dessan" style="background-image: url(img/sakuhin4.jpg);">
+                <nav class="slider-controller">
+                    <ul>
+                      <li><a id="sc-to-left">←</a></li>
+                      <li><a id="sc-to-right">→</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
