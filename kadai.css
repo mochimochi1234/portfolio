@@ -111,8 +111,18 @@
 }
 
 /*----------------------------------------*/
+body{
+    background-color: black;
+}
+p{
+    color: white;
+}
+h2{
+    color: white;
+}
 h1{
     margin: 0;
+    background-color: white;
 }
 .icon{
     width: 20%;
@@ -121,8 +131,13 @@ h1{
 .syokai{
     display: flex;
     gap: 2%;
+    border: 1px solid black;
+    width: 90%;
+    margin-left: 5%;
 }
-
+.aaa{
+    margin-top: 3%;
+}
 /*----------------------------------------*/
 .saku{
     width: 100%;
@@ -217,6 +232,7 @@ h1{
     background-size: cover;
     background-position: center center;
     height: auto;
+    border-top: 1px solid black;
   }
   
   .slider-controller {
