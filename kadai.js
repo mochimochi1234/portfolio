@@ -41,3 +41,16 @@ humburgerA.forEach(function(element){
         navInput.checked = false;
     })
 })
+
+/*------------------------------------------------*/
+let client_h = document.getElementById('h_img').clientHeight;
+var h1 = document.getElementById('h1');
+h1.style.top = client_h * 0.2 + 'px';
+
+window.addEventListener('DOMContentLoaded',function(){
+    window.addEventListener('resize',function(){
+        let client_h = document.getElementById('h_img').clientHeight;
+        var h1 = document.getElementById('h1');
+        h1.style.top = client_h * 0.2 + 'px';
+    });
+});
