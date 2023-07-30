@@ -1,3 +1,4 @@
+//画像切り替え処理
 'use strict';
 const img = ["img/sakuhin4.jpg","img/sakuhin5.jpg","img/sakuhin6.jpg","img/sakuhin7.jpg","img/sakuhin8.jpg","img/sakuhin9.jpg"];
 let count = -1;
@@ -27,4 +28,16 @@ go.addEventListener('click',function(e) {
         count=0;
     }
     document.getElementById("dessan").style.backgroundImage = "url("+img[count]+")";
+})
+
+/*------------------------------------------------*/
+//ハンバーガーメニュー内のリンクを押したときに閉じる処理
+const navInput = document.getElementById('button');
+const humburger = document.querySelectorAll('.zzz li a');
+const humburgerA = Array.from(humburger);
+
+humburgerA.forEach(function(element){
+    element.addEventListener('click',function(){
+        navInput.checked = false;
+    })
 })

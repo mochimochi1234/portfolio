@@ -110,6 +110,7 @@
     left: 0;
 }
 
+
 /*----------------------------------------*/
 body{
     background-color: black;
@@ -123,6 +124,7 @@ h2{
 h1{
     margin: 0;
     background-color: white;
+    font-size: 5vh;
 }
 .icon{
     width: 20%;
@@ -203,7 +205,6 @@ h1{
 }
 .illust{
     margin-top: 5%;
-    border: 1px solid black;
     width: 90%;
     margin-left: 5%;
 }
@@ -211,6 +212,12 @@ h1{
     text-align: center;
     margin: 0;
     font-size: 4vh;
+}
+footer{
+    margin-top: 5%;
+}
+footer p{
+    text-align: center;
 }
 /*----------------------------------------*/
 * {
@@ -232,7 +239,6 @@ h1{
     background-size: cover;
     background-position: center center;
     height: auto;
-    border-top: 1px solid black;
   }
   
   .slider-controller {
